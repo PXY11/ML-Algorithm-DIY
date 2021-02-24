@@ -8,7 +8,7 @@ Created on Wed Feb 24 19:39:51 2021
 import numpy as np
 from collections import Counter
 
-def km(input_vec,dataset,labels,k):
+def knn(input_vec,dataset,labels,k):
     '''
     INPUT:  
             input_vec: 待分类的样本
@@ -36,5 +36,5 @@ group = np.array([[1,1],[1,1.1],[0,0],[0,0.1],[0.5,0.5]])
 labels = np.array(['A','A','B','B','C'])
 input_vec = np.array([0.5,0.9])
 
-res = km(input_vec,group,labels,3)
+res = knn(input_vec,group,labels,3)
 print('k-means方法预测样本属于：%s'%res)
