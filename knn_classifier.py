@@ -37,4 +37,4 @@ labels = np.array(['A','A','B','B','C'])
 input_vec = np.array([0.5,0.9])
 
 res = knn(input_vec,group,labels,3)
-print('k-means方法预测样本属于：%s'%res)
+print('knn方法预测样本属于：%s'%res)
